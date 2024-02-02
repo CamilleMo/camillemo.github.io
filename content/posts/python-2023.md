@@ -1,7 +1,7 @@
 +++
 title = 'Python in 2023'
 date = 2024-01-16T19:17:08+01:00
-draft = false
+draft = true
 +++
 
 # Python in 2023
