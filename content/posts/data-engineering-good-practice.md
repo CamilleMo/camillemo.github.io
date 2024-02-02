@@ -1,7 +1,7 @@
 +++
 title = 'Data Engineering Good Practice'
 date = 2023-11-27T02:21:28+01:00
-draft = true
+draft = false
 +++
 
 # Guidelines to setup a modern Data System on Databricks and Azure 
@@ -20,7 +20,7 @@ In this document, we will cover best practices for your project. By following th
 
 The bronze layer is the first layer in the data platform where raw data is stored. This layer is dedicated to storing the raw data as it is ingested from external sources. The raw data can be in different formats such as CSV, JSON, or Parquet. It is important to organize this layer in a way that makes it easy to access and process the data.
 
-One way to organize the data in the bronze layer is to partition it by ingest timestamp. When data is ingested into the data platform, a timestamp indicating the time of ingestion should be added to each record. This timestamp can then be used to partition the data in the bronze layer, making it easier to manage and process. By partitioning the data by ingest timestamp, we can easily query and retrieve the data for a specific time period or replay a data processing at a previous point in time.
+A way to organize the data in the bronze layer is to partition it by ingest timestamp. When data is ingested into the data platform, a timestamp indicating the time of ingestion should be added to each record. This timestamp can then be used to partition the data in the bronze layer, making it easier to manage and process. By partitioning the data by ingest timestamp, we can easily query and retrieve the data for a specific time period or replay a data processing at a previous point in time.
 
 For example, let's say we ingest data every day at 1am. We can partition the data by the ingest timestamp to create a new partition for each day's data. The partition name could be in the format ISO 8601 to indicate the date of ingestion. This makes it easy to query the data for a specific day or range of days, and also allows us to easily identify the most recent data for a specific dataset. This format is used in my projects.
 

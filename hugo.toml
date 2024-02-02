@@ -1,6 +1,6 @@
 baseURL = 'https://camillemo.github.io'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'My Blog'
 theme = 'poison'
 
 
