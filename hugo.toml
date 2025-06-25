@@ -11,7 +11,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 # disqusShortname = "yourDisqusShortname"
 
 [params]
-    brand = "Data Stuff"                      # name of your site - appears in the sidebar
+    brand = "Data"                      # name of your site - appears in the sidebar
     brand_image = "/images/orange.jpg"
     # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
     # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
